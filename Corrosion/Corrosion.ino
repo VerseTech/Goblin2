@@ -109,10 +109,10 @@ void sensor_corrosion()
         DATO_CORR[x]=RS485.read();         // guarda en variable DATO_CORR la cadena que regresa el sensor 
        
                               }
-   PULG[0]=DATO_CORR[5];              // guarda en la posicion 0 de la cadena PULG - la posicion 5 de la cadena DATO_CORR
-   PULG[1]=DATO_CORR[6];              // guarda en la posicion 1 de la cadena PULG - la posicion 6 de la cadena DATO_CORR                               
+   PULG[0]=DATO_CORR[5];                   // guarda en la posicion 0 de la cadena PULG - la posicion 5 de la cadena DATO_CORR
+   PULG[1]=DATO_CORR[6];                   // guarda en la posicion 1 de la cadena PULG - la posicion 6 de la cadena DATO_CORR                               
     
-   MPY=atol(PULG);                        // convierte el char array (PULG)- en entero(MPY)
+   MPY=atol(PULG);                         // convierte el char array (PULG)- en entero(MPY)
    //MPY1=((MPY/1000)*254);                // hace la conversion de PULGADAS a MICRAS 
    MPY1=(MPY*0.254);    
                                     }
