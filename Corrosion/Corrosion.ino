@@ -1,3 +1,5 @@
+//correcion del serial del serial y tiempos de respuesta server/sim5320a diciembre 2016
+
 #include <SoftwareSerial.h>                           
 //#include <OneWire.h>
 //#include <DallasTemperature.h>
@@ -10,7 +12,7 @@ SoftwareSerial SIM5320(6, 4);                                                   
 
 String  token ="gqeGtoC8soQ2fyLj2iJTQEIsloKjRdLllg5Wtzzemhjyv13dKJmUrFRp1FNM";														//TOKEN UBIDOTS
 String  id    ="5771b9b27625420dd490348e";																		                            //ID CORROSION  
-String  id1   ="5839055976254207457c062f";																		                            // ID BATERIA
+String  id1   ="5839055976254207457c062f";																		                            //ID BATERIA
 
 
 //////////////////////////////////////

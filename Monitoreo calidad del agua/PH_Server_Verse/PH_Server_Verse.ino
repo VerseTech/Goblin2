@@ -1,10 +1,4 @@
 /////////////////////////////////////////////////////////////////
-// TELMEXHUB, MICROSOFT.
-// EJEMPLO PARA SUBIR DATOS DE VARIABLES 
-// A UN SERVIDOR WEB CON UN GOBLIN 2.
-// EN ESTE CASO SUBIREMOS DATOS DE TEMPERATURA 
-// Y PH A LA PLATAFORMA UBIDOTS.
-// -JORGE LUIS, HECTOR, RAFAEL CORTES.
 // -TEAM. VERSE TECHNOLOGY.
 /////////////////////////////////////////////////////////////////
 
@@ -55,7 +49,7 @@ float    INTER=0;
 ISR (USART_RX_vect)
 {
    //while(!(UCSR0A&(1<<UDRE0))){
-    //                              };     //SI TERMINO DE RECIVIR LO ESCRIBE EN TX PARA ENVIAR
+    //                              };     //SI TERMINO DE RECIBI LO ESCRIBE EN TX PARA ENVIAR
     
     X++;
     BUFFER_USART = UDR0;                   // LEE EL BUFFER RX                    
@@ -374,7 +368,7 @@ void SETUP_SIM5320()                       // FUNCION QUE LIMPIA TODO EL STRING 
   SIM5320.println(F("AT+CSQ"));  //PREGUNTO LA CALIDAD DE LA SEÑAL 
   delay(250);
 
-  SIM5320.println(F("AT+CREG?"));  //REGISTRO DE RED, ME TIENE QUE DAR UN 1
+  SIM5320.println(F("AT+CREG?"));  //REGISTRO DE RED
   delay(250);
   
   SIM5320.println(F("AT+COPS?"));  //SELECCION DE OPERADOR
