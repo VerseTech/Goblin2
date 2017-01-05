@@ -242,7 +242,7 @@ void WEB()
   COPIA_SERIAL(16,30); 
   SIM5320.println(F("AT+CIPCLOSE=0"));    //Cierra la conexion
   while(true){
-  delay(100);  
+  delay(250);  
   if (strcasestr(BUFFER_RX,"+CIPCLOSE: 0,0")) {
   break;  
                                                 }
